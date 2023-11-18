@@ -1,14 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import logoHeader from "../../assets/logo.png";
 
 function Header() {
-  return (
-    <header>
 
-      <Link to="/">
-        <img className="navigation__logo" src={logoHeader} alt="logo C'est nous" />
-      </Link>
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  return (
+    <header className={`navigation ${isScrolled ? "sticky" : ""}`}>
+
+      <div className="navigation__logo-container">
+
+        <Link to="/">
+          <img className="navigation__logo" src={logoHeader} alt="logo C'est nous" />
+        </Link>
+      </div>
         
       <nav className="navigation__liens">
 
@@ -33,7 +51,7 @@ function Header() {
         </Link>
 
         <Link to="/agenda"className="navigation__agenda">
-          Agenda
+          Actualités
         </Link>
 
         <Link to="/contact"className="navigation__contact">

@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Accueil from "./pages/Accueil/index";
 import Erreur from "./pages/Erreur/index";
 import Contact from "./pages/Contact/index";
-import Agenda from "./pages/Agenda/index";
+import Actualités from "./pages/Actualités/index";
 import Apropos from "./pages/Apropos/index";
 import Benevoles from "./pages/Benevoles/index";
 import Partenaires from "./pages/Partenaires/index";
@@ -14,7 +14,7 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Accueil />} />
-        <Route path="/agenda" element={<Agenda />} />
+        <Route path="/actualites" element={<Actualités />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/ateliers" element={<Atelier />} />
         <Route path="/benevoles" element={<Benevoles />} />
