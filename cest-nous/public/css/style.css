@@ -7,7 +7,6 @@
   justify-content: space-around;
   transition: top 0.3s;
   position: relative;
-  width: 65%;
 }
 
 .navigation__logo {
@@ -161,6 +160,10 @@ footer {
   transform: scale(1.2);
 }
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .home {
   display: flex;
   flex-direction: column;
@@ -229,7 +232,7 @@ footer {
 }
 
 .mission__text {
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 100;
   align-items: center;
 }
@@ -324,6 +327,135 @@ footer {
 .actualites__block:hover {
   transform: scale(1.1); /* Ajustez la mise à l'échelle selon vos besoins */
   transition: transform 0.3s ease; /* Durée de l'animation */
+}
+
+.titre__contact {
+  font-size: 40px;
+  font-weight: bold;
+  margin-left: 140px;
+  margin-bottom: 100px;
+}
+
+.vignette__contact {
+  width: 600px;
+  height: 700px;
+  object-fit: cover;
+}
+
+.infos__contact {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  position: relative;
+}
+
+.vignette__mail, .vignette__telephone {
+  width: 65px;
+  height: 65px;
+}
+
+.carre {
+  position: absolute;
+  right: -30px;
+  background-color: black;
+  height: 500px;
+  width: 500px;
+  padding-top: 30px;
+  text-align: center;
+  margin-top: 90px;
+}
+
+.carre__mail {
+  margin-top: 60px;
+}
+
+.carre__telephone {
+  margin-top: 30px;
+}
+
+.titre__mail, .titre__telephone {
+  color: white;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.text__mail, .text__telephone {
+  color: white;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.formulaire__contact {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 100px;
+  padding-left: 40px;
+}
+
+.formulaire__contact:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.formulaire__contact h2 {
+  color: #333;
+  text-align: center;
+}
+
+.formulaire__contact form {
+  display: grid;
+  gap: 15px;
+}
+
+.formulaire__contact label {
+  font-size: 16px;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+.formulaire__contact input,
+.formulaire__contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.formulaire__contact input:focus,
+.formulaire__contact textarea:focus {
+  border-color: #E85E78;
+  box-shadow: 0 0 10px rgb(252, 99, 110);
+}
+
+.formulaire__contact input[type=submit] {
+  background-color: #E85E78;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.formulaire__contact input[type=submit]:hover {
+  background-color: #E85E78;
+}
+
+.formulaire__contact input[type=submit]:active {
+  background-color: #E85E78;
+}
+
+#nom, #prenom, #email, #objet, #message, #envoyer {
+  width: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */
