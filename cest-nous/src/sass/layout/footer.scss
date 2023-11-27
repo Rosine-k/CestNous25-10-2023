@@ -1,36 +1,38 @@
 footer {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 30px;
 }
 
 .footer {
-    background-color: #f7f7f7;
-    padding: 20px;
-    text-align: center;
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-top: auto; 
-  }
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: auto;
+}
 
 
-.footer__contact, .footer__mentions, .footer__text {
-    font-size: 15px;
-    list-style: none;
-    text-decoration: none;
-    color: black;
+.footer__contact,
+.footer__mentions,
+.footer__text {
+  font-size: 15px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 
 .footer__contact,
 .footer__mentions {
   text-decoration: none;
-  color: black; 
+  color: black;
   font-weight: bold;
   margin: 10px;
   position: relative;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .footer__contact::before,
@@ -42,34 +44,36 @@ footer {
   transform: translateX(-50%);
   width: 0;
   height: 2px;
-  background-color: #5e829b; 
-  transition: width 0.3s ease; 
+  background-color: #5e829b;
+  transition: width 0.3s ease;
 }
 
 .footer__contact:hover::before,
 .footer__mentions:hover::before {
-  width: 10%; 
+  width: 10%;
 }
 
 .footer__logo-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 20px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-.footer__youtube, .footer__instagram, .footer__facebook {
-    width: 50px;
-    height: 50px;
-    margin: 0 35px;
-    transition: transform 0.3s ease; 
+.footer__youtube,
+.footer__instagram,
+.footer__facebook {
+  width: 50px;
+  height: 50px;
+  margin: 0 35px;
+  transition: transform 0.3s ease;
 }
 
-.footer__youtube:hover, .footer__instagram:hover, .footer__facebook:hover {
-    // padding-bottom: 2px;
-    // background-color: grey;
-    // border-radius: 10px;
-    transform: scale(1.2);
+.footer__youtube:hover,
+.footer__instagram:hover,
+.footer__facebook:hover {
+  // padding-bottom: 2px;
+  // background-color: grey;
+  // border-radius: 10px;
+  transform: scale(1.2);
 }
-
-

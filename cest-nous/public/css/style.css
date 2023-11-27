@@ -107,7 +107,9 @@ footer {
   margin-top: auto;
 }
 
-.footer__contact, .footer__mentions, .footer__text {
+.footer__contact,
+.footer__mentions,
+.footer__text {
   font-size: 15px;
   list-style: none;
   text-decoration: none;
@@ -149,14 +151,18 @@ footer {
   margin-bottom: 20px;
 }
 
-.footer__youtube, .footer__instagram, .footer__facebook {
+.footer__youtube,
+.footer__instagram,
+.footer__facebook {
   width: 50px;
   height: 50px;
   margin: 0 35px;
   transition: transform 0.3s ease;
 }
 
-.footer__youtube:hover, .footer__instagram:hover, .footer__facebook:hover {
+.footer__youtube:hover,
+.footer__instagram:hover,
+.footer__facebook:hover {
   transform: scale(1.2);
 }
 
@@ -285,9 +291,7 @@ body {
   margin-bottom: 100px;
 }
 
-.atelier__block,
-.partenaires__block,
-.actualites__block {
+.atelier__block, .partenaires__block, .actualites__block {
   text-align: center;
   cursor: pointer;
   padding-left: 50px;
@@ -296,23 +300,19 @@ body {
   text-decoration: none;
 }
 
-.atelier__vignette,
-.partenaires__vignette,
-.actualites__vignette {
-  width: 200px; /* Ajustez la largeur selon vos besoins */
+.atelier__vignette, .partenaires__vignette, .actualites__vignette {
+  width: 200px;
   height: 200px;
 }
 
-.atelier__titre,
-.partenaires__titre,
-.actualites__titre {
+.atelier__titre, .partenaires__titre, .actualites__titre {
   margin-top: 10px;
   font-size: 30px;
   font-weight: bold;
   color: black;
-  background-color: white; /* Ajout du fond blanc */
-  border-radius: 28px; /* Border-radius pour arrondir les coins */
-  padding: 20px; /* Ajout de rembourrage pour l'espace entre le texte et le bord */
+  background-color: white;
+  border-radius: 28px;
+  padding: 20px;
   border-bottom: 2px solid #ddd;
 }
 
@@ -322,11 +322,9 @@ body {
   padding: 20px;
 }
 
-.atelier__block:hover,
-.partenaires__block:hover,
-.actualites__block:hover {
-  transform: scale(1.1); /* Ajustez la mise à l'échelle selon vos besoins */
-  transition: transform 0.3s ease; /* Durée de l'animation */
+.atelier__block:hover, .partenaires__block:hover, .actualites__block:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
 }
 
 .titre__contact {
@@ -456,6 +454,368 @@ body {
 
 #nom, #prenom, #email, #objet, #message, #envoyer {
   width: 90%;
+}
+
+.apropos__block {
+  width: 80%;
+  margin: auto;
+}
+
+.apropos__titre {
+  text-align: left;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.apropos__banner {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+}
+
+.apropos__text {
+  margin-top: 50px;
+  text-align: left;
+  font-family: "VotrePolice", sans-serif;
+  margin-bottom: 100px;
+}
+
+.ateliers__block {
+  width: 80%;
+  margin: auto;
+  padding: 20px; /* Ajustez la valeur en fonction de vos préférences */
+  text-align: justify; /* Justification du texte */
+}
+
+.ateliers__titre {
+  text-align: left; /* Centrer le titre */
+  margin-bottom: 50px;
+}
+
+.ateliers__vignette {
+  float: right; /* Image à gauche du texte */
+  margin-left: 20px;
+  max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du bloc */
+  height: auto; /* Pour conserver les proportions de l'image */
+  width: 800px;
+  object-fit: cover;
+}
+
+.ateliers__text {
+  font-size: 20px;
+}
+
+.ateliers__back {
+  background-color: #fb6472;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 100px;
+}
+
+.ateliers__blockb {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.ateliers__titreb {
+  background-color: #fb6472;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+  margin: 0;
+  font-size: 26px;
+}
+
+.ateliers__titrec {
+  background-color: #f65b6b;
+  color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  margin: 0;
+  font-size: 22px;
+}
+
+.ateliers__titred {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.ateliers__video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.ateliers__fleche {
+  width: 50px;
+  height: 50px;
+  transform: rotate(90deg);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ateliers__button {
+  width: 220px;
+  margin-bottom: 40px;
+  background-color: #fb6472;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ateliers__button:hover {
+  background-color: #5e829b;
+}
+
+.benevoles__blocka {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+}
+
+.benevoles__blockb {
+  margin-top: 30px;
+}
+
+.benevoles__text {
+  font-size: 20px;
+}
+
+.form {
+  width: 60%;
+  margin: auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #E85E78;
+  box-shadow: 0 0 10px rgb(252, 99, 110);
+}
+
+.form .situation-group {
+  margin-bottom: 15px;
+}
+
+.form .situation-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form .situation-option {
+  margin-right: 10px;
+}
+
+.form button {
+  padding: 10px 15px;
+  background-color: #E85E78;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #d81b60;
+}
+
+.buttonb {
+  font-size: 19px;
+}
+
+.partenaires__b {
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 50px;
+}
+
+.partenaires__t {
+  font-size: 2em;
+}
+
+.partenaires__text {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+.partenaires__titreb {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 70px;
+  margin-bottom: 60px;
+}
+
+.partenaires__vig,
+.partenaires__vign {
+  max-width: 100px;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partenaires__button {
+  width: 220px;
+  margin-bottom: 60px;
+  background-color: #fb6472;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partenaires__button:hover {
+  background-color: #5e829b;
+}
+
+.linkp {
+  text-decoration: none;
+}
+
+.actualites__a {
+  width: 80%;
+  margin-bottom: 70px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.actualites__vig {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  width: 350px;
+  height: auto;
+  object-fit: cover;
+  float: left;
+  padding-right: 20px;
+}
+
+.actualites__b {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: left;
+  width: 60%;
+  margin-bottom: 40px;
+  border-radius: 15px;
+  transition: background-color 0.3s;
+  align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.actualites__b:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.actualites__blocDate, .actualites__blocLieu {
+  margin-top: 10px;
+}
+
+.actualites__vigDate, .actualites__vigLieu {
+  max-width: 50px;
+  height: 45px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.actualites__vigLieu {
+  width: 40px;
+  padding-right: 6px;
+}
+
+.actualites__vigDate {
+  width: 45px;
+}
+
+.actualites__blocDate {
+  vertical-align: top;
+  margin-right: 10px;
+  display: flex;
+  gap: 15px;
+}
+
+.actualites__blocLieu {
+  vertical-align: bottom;
+  display: flex;
+  gap: 15px;
+}
+
+.actualites__right {
+  flex-grow: 1; /* Permet au contenu de prendre tout l'espace disponible */
+  padding-left: 20px; /* Espace entre l'image et le texte, ajustez selon vos besoins */
+}
+
+.actualites__h2 {
+  background-color: #fb6472;
+  border-radius: 20px;
+  color: white;
+  font-size: 19px;
+  padding-left: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 150px;
+}
+
+.actualites__h4, .actualites__h5 {
+  font-size: 16px;
+}
+
+.actualites__text {
+  text-align: left;
+  width: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */

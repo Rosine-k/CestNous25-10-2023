@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 import Accueil from "./pages/Accueil/index";
 import Erreur from "./pages/Erreur/index";
 import Contact from "./pages/Contact/index";
@@ -8,6 +9,8 @@ import Apropos from "./pages/Apropos/index";
 import Benevoles from "./pages/Benevoles/index";
 import Partenaires from "./pages/Partenaires/index";
 import Atelier from "./pages/Ateliers/index";
+
+
 
 function App() {
   return (

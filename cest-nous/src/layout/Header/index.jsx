@@ -50,7 +50,7 @@ function Header() {
           Partenaires
         </Link>
 
-        <Link to="/agenda"className="navigation__agenda">
+        <Link to="/actualites"className="navigation__agenda">
           Actualités
         </Link>
 
