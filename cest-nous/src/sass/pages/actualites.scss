@@ -91,4 +91,59 @@
     text-align: left;
     width: 400px;
 }
-  
+
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+    .banner__text {
+        font-size: 30px;
+    }
+
+    .mission__img,
+    .mission__block,
+    .temoignages__block {
+        width: 100%;
+    }
+
+    .mission__block,
+    .temoignages__block {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .atelier__block,
+    .partenaires__block,
+    .actualites__block {
+        width: 100%;
+    }
+}
+
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+    .banner__text {
+        font-size: 24px;
+    }
+
+    .mission__img,
+    .mission__block,
+    .temoignages__block {
+        width: 100%;
+    }
+
+    .mission__block,
+    .temoignages__block {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .atelier__block,
+    .partenaires__block,
+    .actualites__block {
+        width: 100%;
+    }
+
+    .atelier__titre,
+    .partenaires__titre,
+    .actualites__titre {
+        font-size: 20px;
+    }
+}

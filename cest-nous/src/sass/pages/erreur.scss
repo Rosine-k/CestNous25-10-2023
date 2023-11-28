@@ -1,0 +1,47 @@
+.erreur__block {
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+
+}
+
+
+  .erreur__titre {
+    color: #ff0000;
+
+  }
+
+  .erreur__text {
+    margin-top: 10px;
+
+    color: #333;
+  }
+
+  .erreur__lien {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+/* Styles pour les téléphones */
+@media screen and (max-width: 480px) {
+  .erreur__block {
+    width: 90%;
+  }
+}
+
+/* Styles pour les tablettes */
+@media screen and (max-width: 768px) {
+  .erreur__block {
+    width: 70%;
+  }
+}  

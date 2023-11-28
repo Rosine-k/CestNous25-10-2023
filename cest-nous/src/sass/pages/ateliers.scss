@@ -1,102 +1,142 @@
 .ateliers__block {
-    width: 80%;
-    margin: auto;
-    // background-color: #f7f7f7;
-    padding: 20px; /* Ajustez la valeur en fonction de vos préférences */
-    text-align: justify; /* Justification du texte */
-  }
-  
-  .ateliers__titre {
-    text-align: left; /* Centrer le titre */
-    margin-bottom: 50px;
-  }
-  
-  .ateliers__vignette {
-    float: right; /* Image à gauche du texte */
-    // margin-right: 20px; /* Espacement entre l'image et le texte */
-    margin-left: 20px;
-    max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du bloc */
-    height: auto; /* Pour conserver les proportions de l'image */
-    width: 800px;
-    object-fit: cover;
-  }
-  
-  .ateliers__text {
+  width: 80%;
+  margin: auto;
+  // background-color: #f7f7f7;
+  padding: 20px;
+  /* Ajustez la valeur en fonction de vos préférences */
+  text-align: justify;
+  /* Justification du texte */
+}
 
-    font-size: 20px;
-  }
+.ateliers__titre {
+  text-align: left;
+  /* Centrer le titre */
+  margin-bottom: 50px;
+}
 
-  .ateliers__back {
-    background-color: #fb6472;
-    text-align: justify;
-    padding: 20px;
-    margin-bottom: 100px;
-    
-  }
-  
-  
+.ateliers__vignette {
+  float: right;
+  /* Image à gauche du texte */
+  // margin-right: 20px; /* Espacement entre l'image et le texte */
+  margin-left: 20px;
+  max-width: 100%;
+  /* Pour s'assurer que l'image ne dépasse pas la largeur du bloc */
+  height: auto;
+  /* Pour conserver les proportions de l'image */
+  width: 800px;
+  object-fit: cover;
+}
+
+.ateliers__text {
+
+  font-size: 20px;
+}
+
+.ateliers__back {
+  background-color: #fb6472;
+  text-align: justify;
+  padding: 20px;
+  margin-bottom: 100px;
+
+}
+
+
+.ateliers__blockb {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+}
+
+.ateliers__titreb {
+  background-color: #fb6472;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 10px;
+  margin: 0;
+  font-size: 26px;
+}
+
+.ateliers__titrec {
+  background-color: #f65b6b;
+  color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 10px;
+  margin: 0;
+  font-size: 22px;
+}
+
+.ateliers__titred {
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+
+.ateliers__video {
+  width: 100%;
+  max-width: 100%;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.ateliers__fleche {
+  width: 50px;
+  height: 50px;
+  transform: rotate(90deg);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.ateliers__button {
+  width: 220px;
+  margin-bottom: 40px;
+  background-color: #fb6472;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 30px;
+  font-size: 25px;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ateliers__button:hover {
+  background-color: #5e829b;
+}
+
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+  .ateliers__block,
   .ateliers__blockb {
-    width: 60%;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .ateliers__titreb {  
-    background-color: #fb6472;
-    color: #fff;
-    border-radius: 15px 15px 0 0;
-    padding: 10px;
-    margin: 0;
-    font-size: 26px;
-  }
-  
-  .ateliers__titrec {
-    background-color: #f65b6b;
-    color: #fff;
-    border-radius: 0 0 15px 15px;
-    padding: 10px;
-    margin: 0;
-    font-size: 22px;
+    width: 95%;
   }
 
-  .ateliers__titred {
-    font-size: 35px;
-    margin-bottom: 30px;
-  }
-  
-  .ateliers__video {
-    width: 100%;
+  .ateliers__vignette {
+    float: none;
+    margin: 0;
     max-width: 100%;
-    border-radius: 15px;
-    margin-top: 30px;
   }
-  
-  .ateliers__fleche {
-    width: 50px;
-    height: 50px;
-    transform: rotate(90deg);
-    margin-top: 40px;
-    margin-bottom: 40px ;
+}
+
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .ateliers__block,
+  .ateliers__blockb {
+    width: 100%;
   }
-  
+
+  .ateliers__vignette {
+    float: none;
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .ateliers__text {
+    font-size: 16px;
+  }
+
   .ateliers__button {
-    width: 220px;
-    margin-bottom: 40px;
-    background-color: #fb6472;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    margin-top: 30px;
-    font-size: 25px;
-    cursor: pointer;
-    display: block; 
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
   }
-  
-  .ateliers__button:hover {
-    background-color: #5e829b;
-  }
-  
-  
+}

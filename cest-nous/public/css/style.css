@@ -7,13 +7,15 @@
   justify-content: space-around;
   transition: top 0.3s;
   position: relative;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .navigation__logo {
   width: 150px;
   height: 150px;
   margin-top: 1em;
-  margin-right: -160px;
 }
 
 .navigation__logo-container {
@@ -166,6 +168,36 @@ footer {
   transform: scale(1.2);
 }
 
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .footer__contact,
+  .footer__mentions {
+    font-size: 12px;
+    margin: 5px;
+  }
+  .footer__logo-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .footer__youtube,
+  .footer__instagram,
+  .footer__facebook {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+  }
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -348,7 +380,8 @@ body {
   position: relative;
 }
 
-.vignette__mail, .vignette__telephone {
+.vignette__mail,
+.vignette__telephone {
   width: 65px;
   height: 65px;
 }
@@ -372,13 +405,15 @@ body {
   margin-top: 30px;
 }
 
-.titre__mail, .titre__telephone {
+.titre__mail,
+.titre__telephone {
   color: white;
   font-size: 25px;
   font-weight: 400;
 }
 
-.text__mail, .text__telephone {
+.text__mail,
+.text__telephone {
   color: white;
   font-size: 21px;
   font-weight: 400;
@@ -452,10 +487,80 @@ body {
   background-color: #E85E78;
 }
 
-#nom, #prenom, #email, #objet, #message, #envoyer {
+#nom,
+#prenom,
+#email,
+#objet,
+#message,
+#envoyer {
   width: 90%;
 }
 
+/* Styles pour les tablettes */
+@media screen and (max-width: 1024px) {
+  .carre {
+    right: -15px;
+  }
+}
+/* Styles pour les téléphones et les tablettes */
+@media screen and (max-width: 480px) {
+  .titre__contact {
+    margin-bottom: 50px;
+  }
+  .infos__contact {
+    align-items: flex-start;
+  }
+  .carre {
+    position: static;
+    background-color: transparent;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .carre__mail,
+  .carre__telephone {
+    margin-top: 0;
+  }
+  .titre__mail,
+  .titre__telephone,
+  .text__mail,
+  .text__telephone {
+    text-align: left;
+  }
+}
+/* Styles pour les formulaires */
+.formulaire__contact {
+  width: 80%;
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 100px;
+  padding-left: 40px;
+}
+
+.formulaire__contact h2 {
+  text-align: center;
+}
+
+.formulaire__contact input,
+.formulaire__contact textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .formulaire__contact {
+    width: 100%;
+  }
+}
 .apropos__block {
   width: 80%;
   margin: auto;
@@ -485,20 +590,26 @@ body {
 .ateliers__block {
   width: 80%;
   margin: auto;
-  padding: 20px; /* Ajustez la valeur en fonction de vos préférences */
-  text-align: justify; /* Justification du texte */
+  padding: 20px;
+  /* Ajustez la valeur en fonction de vos préférences */
+  text-align: justify;
+  /* Justification du texte */
 }
 
 .ateliers__titre {
-  text-align: left; /* Centrer le titre */
+  text-align: left;
+  /* Centrer le titre */
   margin-bottom: 50px;
 }
 
 .ateliers__vignette {
-  float: right; /* Image à gauche du texte */
+  float: right;
+  /* Image à gauche du texte */
   margin-left: 20px;
-  max-width: 100%; /* Pour s'assurer que l'image ne dépasse pas la largeur du bloc */
-  height: auto; /* Pour conserver les proportions de l'image */
+  max-width: 100%;
+  /* Pour s'assurer que l'image ne dépasse pas la largeur du bloc */
+  height: auto;
+  /* Pour conserver les proportions de l'image */
   width: 800px;
   object-fit: cover;
 }
@@ -578,6 +689,36 @@ body {
   background-color: #5e829b;
 }
 
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+  .ateliers__block,
+  .ateliers__blockb {
+    width: 95%;
+  }
+  .ateliers__vignette {
+    float: none;
+    margin: 0;
+    max-width: 100%;
+  }
+}
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .ateliers__block,
+  .ateliers__blockb {
+    width: 100%;
+  }
+  .ateliers__vignette {
+    float: none;
+    margin: 0;
+    max-width: 100%;
+  }
+  .ateliers__text {
+    font-size: 16px;
+  }
+  .ateliers__button {
+    width: 100%;
+  }
+}
 .benevoles__blocka {
   width: 80%;
   margin: auto;
@@ -666,6 +807,21 @@ body {
   font-size: 19px;
 }
 
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+  .benevoles__blocka,
+  .form {
+    width: 95%;
+  }
+}
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .benevoles__blocka,
+  .benevoles__blockb,
+  .form {
+    width: 100%;
+  }
+}
 .partenaires__b {
   width: 80%;
   margin: auto;
@@ -724,6 +880,21 @@ body {
   text-decoration: none;
 }
 
+/* Styles pour les téléphones */
+@media screen and (max-width: 480px) {
+  .partenaires__b {
+    width: 90%;
+  }
+  .partenaires__button {
+    width: 100%;
+  }
+}
+/* Styles pour les tablettes */
+@media screen and (max-width: 768px) {
+  .partenaires__b {
+    width: 70%;
+  }
+}
 .actualites__a {
   width: 80%;
   margin-bottom: 70px;
@@ -816,6 +987,96 @@ body {
 .actualites__text {
   text-align: left;
   width: 400px;
+}
+
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+  .banner__text {
+    font-size: 30px;
+  }
+  .mission__img,
+  .mission__block,
+  .temoignages__block {
+    width: 100%;
+  }
+  .mission__block,
+  .temoignages__block {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .atelier__block,
+  .partenaires__block,
+  .actualites__block {
+    width: 100%;
+  }
+}
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .banner__text {
+    font-size: 24px;
+  }
+  .mission__img,
+  .mission__block,
+  .temoignages__block {
+    width: 100%;
+  }
+  .mission__block,
+  .temoignages__block {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .atelier__block,
+  .partenaires__block,
+  .actualites__block {
+    width: 100%;
+  }
+  .atelier__titre,
+  .partenaires__titre,
+  .actualites__titre {
+    font-size: 20px;
+  }
+}
+.erreur__block {
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+.erreur__titre {
+  color: #ff0000;
+}
+
+.erreur__text {
+  margin-top: 10px;
+  color: #333;
+}
+
+.erreur__lien {
+  display: block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+}
+
+/* Styles pour les téléphones */
+@media screen and (max-width: 480px) {
+  .erreur__block {
+    width: 90%;
+  }
+}
+/* Styles pour les tablettes */
+@media screen and (max-width: 768px) {
+  .erreur__block {
+    width: 70%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

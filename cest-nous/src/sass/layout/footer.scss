@@ -72,8 +72,41 @@ footer {
 .footer__youtube:hover,
 .footer__instagram:hover,
 .footer__facebook:hover {
-  // padding-bottom: 2px;
-  // background-color: grey;
-  // border-radius: 10px;
+  
   transform: scale(1.2);
+}
+
+/* Media queries pour les tablettes */
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+/* Media queries pour les téléphones */
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .footer__contact,
+  .footer__mentions {
+    font-size: 12px;
+    margin: 5px;
+  }
+
+  .footer__logo-container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .footer__youtube,
+  .footer__instagram,
+  .footer__facebook {
+    width: 30px;
+    height: 30px;
+    margin: 0 15px;
+  }
 }

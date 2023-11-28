@@ -6,14 +6,16 @@
     justify-content: space-around; 
     transition: top 0.3s;
     position: relative;
-    // width: 80%;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .navigation__logo {
     width: 150px;
     height: 150px;
     margin-top: 1em;
-    margin-right: -160px;
+    // margin-right: -160px;
 }
 
 .navigation__logo-container {

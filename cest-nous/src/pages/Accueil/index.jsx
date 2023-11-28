@@ -12,9 +12,10 @@ import { Link } from "react-router-dom";
 function Accueil() {
     return (
         
-        <div className="home">
+        <div className="">
             <Header />
             <main>
+            <div className="home">    
             <div className="banner">
                 <img className="banner__logo" alt="banner" src={bannerHome}></img>
             
@@ -72,7 +73,7 @@ function Accueil() {
 
             </div>
 
-
+            </div>  
             </main>
             <Footer />
         </div>
