@@ -1,6 +1,6 @@
 import Header from "../../layout/Header/index";
 import Footer from "../../layout/Footer/index";
-import bannerHome from "../../assets/banner.png";
+import bannerHome from "../../assets/affiche.jpg";
 import Mission from "../../assets/mission.jpg";
 import Video from "../../assets/portrait.png";
 import Ateliers from "../../assets/ateliers.png";
@@ -19,7 +19,7 @@ function Accueil() {
             <div className="banner">
                 <img className="banner__logo" alt="banner" src={bannerHome}></img>
             
-                <h1 className="banner__text">Ateliers théâtre destiné aux femmes</h1>
+                <h1 className="banner__text">Ateliers théâtre 100% femmes</h1>
            
             </div> 
 
