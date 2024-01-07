@@ -2,7 +2,6 @@ import Header from "../../layout/Header/index";
 import Footer from "../../layout/Footer/index";
 import Imgateliers from "../../assets/ateliersimg.jpg";
 import Video from "../../assets/videoateliers.png";
-import { Link } from "react-router-dom";
 
 
 function Ateliers () {
@@ -45,9 +44,58 @@ function Ateliers () {
 
                     <h4 className="ateliers__titred">Pour participer aux ateliers</h4>
 
-                    <Link to="/contact" className="linkp"><button className="ateliers__button">Contactez nous</button></Link>
+                    <h5 className="ateliers__titree">Veuillez remplir le formulaire</h5>
+
+
 
                 </div>
+
+                <div className="ateliers__blockc">
+            <form  className="form" action="/submit_form" method="post">
+              <label htmlFor="nom">Nom :</label>
+              <input type="text" id="nomb" name="nom" required />
+
+              <label htmlFor="prenom">Prénom :</label>
+              <input type="text" id="prenomb" name="prenom" required />
+
+              <label htmlFor="adresse">Adresse :</label>
+              <input type="text" id="adresse" name="adresse" required />
+
+              <label htmlFor="codePostal">Code Postal :</label>
+              <input type="text" id="codePostal" name="codePostal" required />
+
+              <label htmlFor="telMobile">Téléphone Mobile :</label>
+              <input type="tel" id="telMobile" name="telMobile" required />
+
+              <label htmlFor="age">Âge :</label>
+              <input type="number" id="age" name="age" required />
+
+              <label htmlFor="email">Email :</label>
+              <input type="email" id="emailb" name="email" required />
+
+              <label htmlFor="situation">Situation :</label>
+              <input type="checkbox" id="etudiant" name="situation" value="etudiant" />
+              <label htmlFor="etudiant">Étudiant(e)</label>
+
+              <input type="checkbox" id="travail" name="situation" value="travail" />
+              <label htmlFor="travail">Au travail</label>
+
+              <input type="checkbox" id="rechercheEmploi" name="situation" value="rechercheEmploi" />
+              <label htmlFor="rechercheEmploi">En recherche d’emploi</label>
+
+              <input type="checkbox" id="retraite" name="situation" value="retraite" />
+              <label htmlFor="retraite">À la retraite</label>
+
+              <input type="checkbox" id="autre" name="situation" value="autre" />
+              <label htmlFor="autre">Autre</label>
+              <input type="text" id="autreSituation" name="autreSituation" />
+
+              <label htmlFor="motivation">Pourquoi voulez vous participer à l'atelier ?</label>
+              <textarea id="motivation" name="motivation" rows="4" required></textarea>
+
+              <button className="buttonb" type="submit">Envoyer</button>
+            </form>
+          </div>
 
             </div>
 

@@ -67,7 +67,7 @@
 
 .ateliers__titred {
   font-size: 35px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .ateliers__video {
@@ -103,6 +103,88 @@
 
 .ateliers__button:hover {
   background-color: #5e829b;
+}
+
+.ateliers__titree {
+  font-size: 30px;
+  color: #fb6472;
+}
+.ateliers__blockc {
+  margin-top: 30px;
+}
+
+.form {
+  width: 60%;
+  margin: auto;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  font-size: 18px;
+}
+
+.form:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form input,
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  border-color: #E85E78;
+  box-shadow: 0 0 10px rgba(252, 99, 110, 255);
+}
+
+.form .situation-group {
+  margin-bottom: 15px;
+}
+
+.form .situation-label {
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form .situation-option {
+  margin-right: 10px;
+}
+
+.form button {
+  padding: 10px 15px;
+  background-color: #E85E78;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+  background-color: #d81b60;
+}
+
+.buttonb {
+  font-size: 19px;
 }
 
 /* Media queries pour les tablettes */

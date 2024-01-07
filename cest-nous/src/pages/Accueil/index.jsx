@@ -1,7 +1,7 @@
 import Header from "../../layout/Header/index";
 import Footer from "../../layout/Footer/index";
-import bannerHome from "../../assets/affiche.jpg";
-import Mission from "../../assets/mission.jpg";
+import bannerHome from "../../assets/banner.png";
+import Mission from "../../assets/represent.jpg";
 import Video from "../../assets/portrait.png";
 import Ateliers from "../../assets/ateliers.png";
 import Partenaires from "../../assets/partenaires.png";
@@ -24,8 +24,8 @@ function Accueil() {
             </div> 
 
             <article className="mission missionb"> 
-               <img className="mission__img" alt="représentation" src={Mission}></img>
-               <div className="mission__block" >
+                <img className="mission__img" alt="représentation" src={Mission}></img>
+                <div className="mission__block" >
                   <h2 className="mission__titre" >Notre mission</h2>
                   <h3 className="mission__text">Offrir aux femmes un espace de liberté, d'expression et de découverte de soi à travers des ateliers théâtre. Les séances sont animées par des professionnels du théâtre, permettant aux participantes de cultiver leur confiance en elles, d'améliorer leurs compétences en communication et de créer des liens durables avec d'autres femmes.
                   L'association donne aux femmes l'occasion de partager leurs histoires, leurs perspectives et leurs talents, en abordant des thèmes pertinents et en suscitant des conversations significatives.

@@ -1,6 +1,6 @@
 import Header from "../../layout/Header/index";
 import Footer from "../../layout/Footer/index";
-import Vignette from "../../assets/contact.png";
+import Vignette from "../../assets/travaillerb.jpg";
 import Appel from "../../assets/appel.png";
 import Mail from "../../assets/e-mail.png";
 
@@ -39,19 +39,19 @@ function Contact () {
 
                     <form action="#" method="post">
                      <label htmlFor="nom">Nom :</label>
-                     <input type="text" id="nom" name="nom" required />
+                     <input type="text" id="nomC" name="nom" required />
 
                      <label htmlFor="prenom">Prénom :</label>
-                     <input type="text" id="prenom" name="prenom" required />
+                     <input type="text" id="prenomC" name="prenom" required />
 
                      <label htmlFor="email">Adresse E-mail :</label>
-                     <input type="email" id="email" name="email" required />
+                     <input type="email" id="emailC" name="email" required />
 
                      <label htmlFor="objet">Objet :</label>
-                     <input type="text" id="objet" name="objet" required />
+                     <input type="text" id="objetC" name="objet" required />
 
                      <label htmlFor="message">Message :</label>
-                     <textarea id="message" name="message" rows="4" required></textarea>
+                     <textarea id="messageC" name="message" rows="4" required></textarea>
 
                      <input id="envoyer" type="submit" value="Envoyer" />
                     </form>
